@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/advice.css">
+    <title>建议</title>
+</head>
+<body>
+    <!--页眉区header-->
+    <header id="page-header" class="page__header" style="background-image:url(../img/20200613111915.jpg)">
+        <!--导航区page__navbar-->
+        <nav class="page__navbar">
+            <!--内容区，需要设置相应的样式使其位于中间，是最大的盒子-->
+            <div class="page__container navbar-container">
+                <!--网站的logo，放置于页面左上角-->
+                <a class="page__logo">包志华's Web</a>
+                <!--nav，右侧的导航区-->
+                <nav class="page__nav">
+                    <!--导航列表-->
+                    <ul class="nav__list clearfix">
+                    <li class="nav__item">
+                        <a href="index.html" alt="首页" title="首页">首页</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="about.html" alt="关于" title="关于">关于</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="resume.html" alt="简历" title="简历">简历</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="advice.html" alt="建议" title="建议">建议</a>
+                    </li>
+                </ul>
+                <!--end of ul-->
+            </nav>
+            <!--end of nav（右侧）-->
+        </div>
+    </nav>
+    <!--end of nav（左侧）-->
+    <!--放置于页面中间，是网站的主题，有一个大标题h1，分割线hr，一个段落座右铭p-->
+    <section class="page__info">
+        <h1 class="info__title">Your Advice - progress every day</h1>
+        <hr class="info__hr">
+        <p class="info__desc">请相信，一分耕耘，一分收获</p>
+    </section>
+    <!--end of section-->
+    </header>
+    <!--end of header-->
+    <div class="jiange"></div>
+    <!--内容区的外框-->
+    <div class="outerframe ">
+        <!--内容区内框，表格的开始-->
+        <table class="innerframe inner">
+            <tr>
+                <td>
+                    <!--表单开始，分为一个欢迎部分welcome-table，一个问题部分，一个用户信息收集部分-->
+                    <form id="limesurvey" name="limesurvey" action="" method="post">
+                        <input type="hidden" name="fieldnames" id="fieldnames">
+                        <!--欢迎部分welcome-table的开始-->
+                        <table class="welcome-table">
+                            <tbody>
+                                <tr>
+                                    <!--横线，作为分割区-->
+                                    <td class="survey-description">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <!--主体部分-->
+                                    <td class="survey-welcome">
+                                        <span class="surveywelcome"> 
+                                            <p>
+                                                尊敬的用户您好：<br>
+                                                很高兴您可以访问我的个人网站——包志华's Web，这样的网站设计您喜欢吗？我很高兴接受您的意见与建议。
+                                            </p>
+                                        </span>
+                                    </td>
+                                    <!--end of 主体部分-->
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!--end of 欢迎部分welcome-table-->
+                        <!--问题部分，一共有三个问题-->
+                        <div id="group-0">
+                            <input type="hidden" name="screen" id="screen">
+                            <table class="group">
+                                <tbody>
+                                    <tr>
+                                        <td align="center"><br>
+                                            <!--问题一：-->
+                                            <div class="left">
+                                                <!--标题部分-->
+                                                <span class="group-name">
+                                                    问题一：
+                                                </span>
+                                            </div>
+                                            <!--标题部分的结束-->
+                                            <br>
+                                            <!--问题1的主体部分-->
+                                            <div id="question1" class="list-radio mandatory">
+                                                <!--问题1的外框-->
+                                                <table class="question-wrapper">
+                                                    <!--内容区的开始-->
+                                                    <tbody>
+                                                        <!--题目区的开始-->
+                                                        <tr>
+                                                            <td class="questiontext">
+                                                                <!--显示问题的重要性-->
+                                                                <span class="asterisk">*</span>
+                                                                <!--具体问题-->
+                                                                <span class="qnumcode">您对网站设计满意度如何？</span>
+                                                                <!--换行-->
+                                                                <br>
+                                                                <span class="questionhelp"></span>
+                                                                <strong>
+                                                                    <br>
+                                                                    <!--问题的提示部分，加强显示-->
+                                                                    <span class="errormandatory">本题必答. </span>
+                                                                </strong>
+                                                                <span class="questionhelp"></span>
+                                                            </td>
+                                                        </tr>
+                                                        <!--end of 题目区-->
+                                                        <tr class="survey-question-help"></tr>
+                                                        <!--选择区的开始-->
+                                                        <tr>
+                                                            <td class="answer">
+                                                                <!--选择区列表-->
+                                                                <ul class="answers-list radio-list">
+                                                                    <li class="answer-item radio-item">
+                                                                        <!--因为为单选框，type="radio，name一致，for属性值与id属性值一致-->
+                                                                        <input type="radio" class="radio" id="answer4831" value="1" name="1">
+                                                                        <label for="answer4831" class="answertext">非常满意</label>
+                                                                    </li>
+                                                                    <li class="answer-iten radio-item">
+                                                                        <input type="radio" class="radio" id="answer4832" value="2" name="1">
+                                                                        <label for="answer4832" class="answertext">满意</label>
+                                                                    </li>
+                                                                    <li class="answer-iten radio-item">
+                                                                        <input type="radio" class="radio" id="answer4833" value="3" name="1">
+                                                                        <label for="answer4833" class="answertext">一般</label>
+                                                                    </li>
+                                                                    <li class="answer-iten radio-item">
+                                                                        <input type="radio" class="radio" id="answer4834" value="4" name="1">
+                                                                        <label for="answer4834" class="answertext">不满意</label>
+                                                                    </li>
+                                                                    <li class="answer-iten radio-item">
+                                                                        <input type="radio" class="radio" id="answer4835" value="5" name="1">
+                                                                        <label for="answer4835" class="answertext">非常不满意</label>
+                                                                    </li>
+                                                                </ul> 
+                                                                <!--end of 选择区列表-->
+                                                            </td>
+                                                        </tr>
+                                                        <!--end of 选择区-->
+                                                    </tbody>
+                                                </table>
+
+                                                <!--问题二：-->
+                                                <div class="left">
+                                                    <!--标题部分-->
+                                                    <span class="group-name">
+                                                        问题二：
+                                                    </span>
+                                                </div>
+                                                <!--标题部分的结束-->
+                                                <br>
+                                                <!--问题2的主体部分-->
+                                                <div id="question2" class="list-radio mandatory">
+                                                    <!--问题2的外框-->
+                                                    <table class="question-wrapper">
+                                                        <!--内容区的开始-->
+                                                        <tbody>
+                                                            <tr>
+                                                                <!--题目区的开始-->
+                                                                <td class="questiontext">
+                                                                    <!--具体问题-->
+                                                                    <span class="qnumcode">您更喜欢以下哪种网站设计风格？</span>
+                                                                    <br>
+                                                                    <span class="questionhelp"></span>
+                                                                </td>
+                                                                <!--题目区的结束-->
+                                                            </tr>
+                                                            <tr class="survey-question-help"></tr>
+                                                            <!--选择区的开始-->
+                                                            <tr>
+                                                                <td class="answer">
+                                                                    <!--选项列表-->
+                                                                    <ul class="answers-list checkbox-list">
+                                                                        <!--因为为复选框，所以type="checkbox"-->
+                                                                        <li class="answer-item checkbox-item">
+                                                                            <input type="checkbox" class="checkbox" id="answer4836" value="1">
+                                                                            <label for="answer4836" class="answertext">扁平化设计</label>
+                                                                        </li>
+                                                                        <li class="answer-iten checkbox-item">
+                                                                            <input type="checkbox" class="checkbox" id="answer4837" value="2">
+                                                                            <label for="answer4837" class="answertext">3D风格</label>
+                                                                        </li>
+                                                                        <li class="answer-iten checkbox-item">
+                                                                            <input type="checkbox" class="checkbox" id="answer4838" value="3">
+                                                                            <label for="answer4838" class="answertext">极简风格</label>
+                                                                        </li>
+                                                                        <li class="answer-iten checkbox-item">
+                                                                            <input type="checkbox" class="checkbox" id="answer4839" value="4">
+                                                                            <label for="answer4839" class="answertext">插画风格</label>
+                                                                        </li>
+                                                                        <li class="answer-iten checkbox-item">
+                                                                            <input type="checkbox" class="checkbox" id="answer4840" value="5">
+                                                                            <label for="answer4840" class="answertext">黑板风格</label>
+                                                                        </li>
+                                                                    </ul> 
+                                                                    <!--选项列表的结束-->
+                                                                </td>
+                                                            </tr>
+                                                            <!--选择区的结束-->
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <!--问题2的主体部分的结束-->
+                            
+                                            <!--问题三：-->
+                                            <div id="question3" class="text-long">
+                                                <table class="question-wrapper">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="questiontext">
+                                                                <span class="asterisk"></span>
+                                                                <span class="qnumcode" style="display: none;">  </span>
+                                                                您对此网站设计有什么好的想法，或者有什么好的意见与建议吗，我会积极采纳并由衷感谢！
+                                                                <br>
+                                                                <span class="questionhelp"></span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="survey-question-help"></tr>
+                                                        <tr>
+                                                            <td class="answer">
+                                                                <p class="question answer-item text-item">
+                                                                    <label for="answer5484" class="hide label">答案</label>
+                                                                    <textarea name="5484" id="answer5484" cols="40" rows="5" class="textarea empty"></textarea>
+                                                                </p>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        
+                        <!--用户信息收集部分-->
+                        <div id="group-1">
+                            <input type="hidden" name="screen" id="screen">
+                            <table class="group">
+                                <tbody>
+                                    <tr>
+                                        <td align="center">
+                                            <br>
+                                            <div class="left">
+                                                <!--标题区-->
+                                                <span class="group-name">
+                                                    反馈用户信息收集
+                                                </span>
+                                            </div>
+                                            <br>
+                                            <div id="question15485" class="multiple-short-txt">
+                                                <table class="question-wrapper">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="questiontext">
+                                                                <span class="asterisk"></span>
+                                                                <span class="qnumode" style="display: none;"></span>
+                                                                <p>
+                                                                    <strong>如果可能，我会联系您进行更深层次的交流，如果您愿意，请填写如下信息，方便我与您联系，谢谢！（信息仅作为内部资料绝不外泄）</strong>
+                                                                </p>
+                                                                <br>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="answer">
+                                                                <ul class="subquestions-list questions-list text-list">
+                                                                    <li id="java4851" class="question-item answer-item text-item">
+                                                                        <label for="answer4851">姓名</label>
+                                                                        <!--让用户进行信息输入-->
+                                                                        <span>
+                                                                            <input type="text" class="text empty" name="4851" id="answer4851" size="20">
+                                                                        </span>
+                                                                    </li>
+                                                                    <li id="java4852" class="question-item answer-item text-item">
+                                                                        <label for="answer4852">手机号</label>
+                                                                        <span>
+                                                                            <input type="text" class="text empty" name="4852" id="answer4852" size="20">
+                                                                        </span>
+                                                                    </li>
+                                                                </ul>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!--提交部分-->
+                        <table class="navigator-table">
+                            <tbody>
+                                <tr>
+                                    <td class="submit-buttons">
+                                        <input type="hidden" name="move" value="movenext" id="movenext">
+                                        <button type="submit" value="提交" class="submit ui-button ui-width ui-state-default ui-corner-all ui-button-text-only">
+                                            <span class="ui-button-text">提交</span>
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <!--页脚区-->
+    <footer class="page__footer">
+        <!--页脚区的上半部分-->
+        <section class="footer__top">
+            <!--页脚区的内容既要符合page__container的格式要求，也要满足footer__container的格式要求-->
+            <!--分为四个部分，关于部分，二维码部分，链接部分，搭建工具部分-->
+            <div class="page__container footer__container">
+                <!--关于部分-->
+                <div class="footer-top__item footer-top__item--2">
+                    <!--标题部分-->
+                    <h3 class="item__title">关于</h3>
+                    <!--内容部分-->
+                    <div class="item__content">
+                        <p class="item__text">编程是一件幸福的事情,不要让你的学习变得索然无味.</p>
+                        <!--列表部分-->
+                        <ul class="footer__contact-info">
+                            <li class="contact-info__item"><i class="iconfont icon-address"></i> 
+                                <span>WuHan,China</span></li>
+                            <li class="contact-info__item"><i class="iconfont icon-email2"></i>
+                                <span>205836521@qq.com</span></li>
+                            <li class="contact-info__item"><i class="iconfont icon-address"></i>
+                                 <span><a href="" style="color:#69747a;text-decoration:none">
+                                    20**皖ICP备********号</a></span></li>
+                        </ul>
+                        <!--end of list-->
+                    </div>
+                </div>
+                <!--end of 关于-->
+                <!--二维码部分-->
+                <div class="footer-top__item footer__image"><img src="../img/20200613180427.jpg" alt="logo"
+                        title="包志华's Web">
+                </div>
+                <!--end of 二维码部分-->
+                <!--友情链接部分-->
+                <div class="footer-top__item">
+                    <h3 class="item__title">友情链接</h3>
+                    <div class="item__content">
+                        <ul class="footer-top__list">
+                            <li class="list-item"><a href="https://blog.csdn.net/qianduankuangjia/article/details/78042944?utm_medium=distribute.pc_relevant_t0.none-task-blog-OPENSEARCH-1.nonecase&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-OPENSEARCH-1.nonecase" 
+                                title="前端框架"
+                                    target="_blank">前端框架</a></li>
+                            <li class="list-item"><a href="https://blog.csdn.net/weixin_43955769/article/details/86372019?ops_request_misc=&request_id=&biz_id=102&utm_term=web%E5%89%8D%E6%AE%B5&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-2-86372019" 
+                                title="好用的网站" target="好用的网站">好用的网站</a>
+                            </li>
+                            <li class="list-item"><a href="https://blog.csdn.net/qq814965130/article/details/79436497?ops_request_misc=&request_id=&biz_id=102&utm_term=web%E5%89%8D%E6%AE%B5&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-3-79436497" 
+                                title="实例"
+                                    target="_blank">实例</a></li>
+                            <li class="list-item"><a href="https://blog.csdn.net/qq_20373723/article/details/78198447?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522159204290519726869039302%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=159204290519726869039302&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~first_rank_ecpm_v1~rank_ctr_v3-8-78198447.ecpm_v1_rank_ctr_v3&utm_term=web%E5%89%8D%E6%AE%B5" 
+                                title="常见问题" target="_blank">常见问题</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--end of 友情链接部分-->
+                <!--构建工具部分-->
+                <div class="footer-top__item">
+                    <h3 class="item__title">构建工具</h3>
+                    <div class="item__content">
+                        <ul class="footer-top__list">
+                            <li class="list-item"><a href="" title="Sublime Text" target="_blank">Sublime Text</a>
+                            </li>
+                            <li class="list-item"><a href="" title="PS"
+                                    target="_blank">PS</a></li>
+                            <li class="list-item"><a href="" title="WebStorm"
+                                target="_blank">WebStorm</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!--end of 构建工具部分-->
+            </div>
+        </section>
+        <!--end of 页脚区的上半部分-->
+        <!--页脚区的下半部分-->
+        <section class="footer__bottom">
+            <div class="page__container footer__container">
+                <p class="footer__copyright">© Skapp 2020 powered by ****, made
+                    by ******, Hosted by Coding Pages.</p>
+            </div>
+        </section>
+        <!--end of 页脚区的下半部分-->
+    </footer>
+</body>
+</html>
